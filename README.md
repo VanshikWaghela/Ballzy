@@ -1,5 +1,3 @@
-
-
 # Ballzy ⚽⚽️⚽️
 
 Welcome to Ballzy! This system is designed to track players' movements and analyze their performance during football matches. Using the power of computer vision and deep learning, this tool allows you to detect players, track their movements, calculate their speeds, and even analyze goals scored during the game.
@@ -69,6 +67,13 @@ Install the dependencies by running:
 pip install -r requirements.txt
 ```
 
+## View the Results
+- You can also view and download the results from the analysis [here on Google Drive](https://drive.google.com/drive/folders/1xaqQ3eMijbNxrryPla__d8ay_NktaYFu).
+
 ## Contributing 🤝
 
 Feel free to open issues or create pull requests if you want to contribute to the project. Your feedback and improvements are always welcome!
+
+## Acknowledgements 🙏
+
+This project uses the [YOLOv8 model](https://github.com/ultralytics/yolov8) for object detection, which is a powerful tool for real-time applications like this.
