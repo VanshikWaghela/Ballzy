@@ -1,0 +1,17 @@
+# Byte-compiled files
+__pycache__/
+*.pyc
+
+# Model weights
+*.pt
+
+# Video files in outputs
+outputs/*.mp4
+outputs/*.MP4
+
+# Input videos (optional: include if necessary)
+inputs/*.mp4
+inputs/*.MP4
+
+# Exclude all outputs except one (uncomment to include specific files)
+# !outputs/output.mp4
