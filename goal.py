@@ -353,8 +353,8 @@ class EnhancedGameAnalysis:
     def run(self):
         fig, (ax1, ax2) = plt.subplots(2, 1)
         fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-        out_main = cv2.VideoWriter('enhanced_output_main.mp4', fourcc, 30, (self.frame_width, self.frame_height))
-        out_motion = cv2.VideoWriter('enhanced_output_motion.mp4', fourcc, 30, (self.frame_width, self.frame_height))
+        out_main = cv2.VideoWriter('outputs/enhanced_output_main.mp4', fourcc, 30, (self.frame_width, self.frame_height))
+        out_motion = cv2.VideoWriter('outputs/enhanced_output_motion.mp4', fourcc, 30, (self.frame_width, self.frame_height))
         start_time = time.time()
 
         while True:
@@ -437,5 +437,5 @@ if __name__ == "__main__":
         'player': 'yolov8n.pt',
         'ball': 'yolov8n.pt'  
     }
-    analysis_system = EnhancedGameAnalysis('football2.mp4', model_paths)
+    analysis_system = EnhancedGameAnalysis('inputs/football2.mp4', model_paths)
     analysis_system.run()
